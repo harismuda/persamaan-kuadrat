@@ -19,15 +19,15 @@
                             <p>Masukkan persamaan Kuadrat : </p>
                         </div>
                         <div class="col-12 mb-3">
-                            <input type="text" style="width: 30px;" id="a">
+                            <input type="text" style="width: 40px;" id="a">
                             <label for="a"> x² + </label>
-                            <input type="text" style="width: 30px;" id="b">
+                            <input type="text" style="width: 40px;" id="b">
                             <label for="b"> x + </label>
-                            <input type="text" style="width: 30px;" id="c">
+                            <input type="text" style="width: 40px;" id="c">
                             <label for="c"> = 0</label>
                         </div>
                         <div>
-                            <button class="btn btn-info" onclick="hitungAkar()">Hitung akar</button><br><br>
+                            <button class="btn btn-outline-dark" onclick="hitungAkar()">Hitung akar</button><br><br>
                         </div>
                         <div>
                             <label>Hasil Akar persamaan kuadrat:</label>
@@ -53,7 +53,7 @@
             // Menghitung diskriminan
             var diskriminan = math.subtract(math.pow(b, 2), math.multiply(4, math.multiply(a, c)));
     
-            // Menghitung akar-akar
+            // Memeriksa
             var akar1, akar2;
             if (math.larger(diskriminan, 0)) {
                 akar1 = math.divide(math.add(-b, math.sqrt(diskriminan)), math.multiply(2, a));
